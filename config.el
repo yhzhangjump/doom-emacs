@@ -85,3 +85,6 @@
 (map! :n "C-x h" #'previous-buffer)
 (map! :n "-" #'lsp-find-definition)
 (map! :n "M--" #'+private/treemacs-back-and-forth)
+
+(projectile-discover-projects-in-directory "~/repos/agave" 1)
+(projectile-discover-projects-in-directory "~/repos/firedancer" 1)
