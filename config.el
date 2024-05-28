@@ -74,3 +74,14 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(defun +private/treemacs-back-and-forth ()
+  (interactive)
+  (if (treemacs-is-treemacs-window-selected?)
+      (treemacs-select-window)
+    (treemacs-select-window)))
+
+(map! :n "C-x l" #'next-buffer)
+(map! :n "C-x h" #'previous-buffer)
+(map! :n "-" #'lsp-find-definition)
+(map! :n "M--" #'+private/treemacs-back-and-forth)
