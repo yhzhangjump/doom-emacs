@@ -78,7 +78,7 @@
 (defun +private/treemacs-back-and-forth ()
   (interactive)
   (if (treemacs-is-treemacs-window-selected?)
-      (treemacs-select-window)
+      (ace-swap-window)
     (treemacs-select-window)))
 
 (map! :n "C-x l" #'next-buffer)
