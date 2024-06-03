@@ -88,3 +88,9 @@
 
 (projectile-discover-projects-in-directory "~/repos/agave" 1)
 (projectile-discover-projects-in-directory "~/repos/firedancer" 1)
+
+(require 'highlight-indent-guides)
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+(setq highlight-indent-guides-method 'character)
+(setq highlight-indent-guides-auto-enabled nil)
+(set-face-foreground 'highlight-indent-guides-character-face "color-24")
