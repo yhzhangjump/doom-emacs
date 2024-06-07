@@ -81,8 +81,18 @@
       (ace-swap-window)
     (treemacs-select-window)))
 
+(defun jump-multiple-lines-forward ()
+  (interactive)
+  (forward-line 5))
+
+(defun jump-multiple-lines-backward ()
+  (interactive)
+  (forward-line -5))
+
 (map! :n "C-f" #'forward-word)
 (map! :n "C-b" #'backward-word)
+(map! :n "C-n" #'jump-multiple-lines-forward)
+(map! :n "C-p" #'jump-multiple-lines-backward)
 (map! :n "C-w" #'sp-delete-word)
 (map! :n "C-x l" #'next-buffer)
 (map! :n "C-x h" #'previous-buffer)

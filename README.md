@@ -8,8 +8,10 @@
 * **G** - go to the last line of the document
 * **Ctrl** + **d** - move cursor and screen **down** 1/2 page
 * **Ctrl** + **u** - move cursor and screen **up** 1/2 page
-* **Ctrl** + **b**- or **b** - jump backwards to the start of a word
-* **Ctrl** + **f**- or **e** - jump forwards to the start of a word
+* **Ctrl** + **n** - move cursor down 5 lines
+* **Ctrl** + **p** - move cursor up 5 lines
+* **Ctrl** + **b**- or **b** - move cursor backwards by a word
+* **Ctrl** + **f**- or **e** - move cursor forwards by a word
 
 ## Edit & Search/Replace
 * **Ctrl** + **/** - undo
