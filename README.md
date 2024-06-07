@@ -10,8 +10,8 @@
 * **Ctrl** + **u** - move cursor and screen **up** 1/2 page
 * **Ctrl** + **n** - move cursor down 5 lines
 * **Ctrl** + **p** - move cursor up 5 lines
-* **Ctrl** + **b**- or **b** - move cursor backwards by a word
 * **Ctrl** + **f**- or **e** - move cursor forwards by a word
+* **Ctrl** + **b**- or **b** - move cursor backwards by a word
 
 ## Edit & Search/Replace
 * **Ctrl** + **/** - undo
