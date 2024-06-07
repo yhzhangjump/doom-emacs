@@ -81,6 +81,8 @@
       (ace-swap-window)
     (treemacs-select-window)))
 
+(map! :n "C-f" #'forward-char)
+(map! :n "C-b" #'backward-char)
 (map! :n "C-x l" #'next-buffer)
 (map! :n "C-x h" #'previous-buffer)
 (map! :n "-" #'lsp-find-definition)
