@@ -1,4 +1,5 @@
 ## Cursor Movement
+* **h/j/k/l** just like vim
 * **gj** - move cursor down (multi-line text)
 * **gk** - move cursor up (multi-line text)
 * **0** - jump to the start of the line
@@ -17,7 +18,7 @@
 * **SPC s-s** search string in buffer
 * **SPC s-p** search string in project
 * **#** - search the token at cursor **up** in the buffer
-* ***** - search the token at cursor **down** in the buffer
+* ** * ** - search the token at cursor **down** in the buffer
 * **:%s/old/new/g** - replace all old with new throughout file
 * **:%s/old/new/gc** - replace all old with new throughout file with confirmation
 
