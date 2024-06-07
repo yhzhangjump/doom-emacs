@@ -89,6 +89,7 @@
 (map! :n "-" #'lsp-find-definition)
 (map! :n "M--" #'+private/treemacs-back-and-forth)
 
+(require 'hl-line)
 (require 'highlight-indent-guides)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 (setq highlight-indent-guides-method 'character)
