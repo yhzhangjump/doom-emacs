@@ -13,7 +13,7 @@
 * **Ctrl** + **f**- or **e** - move cursor forwards by a word
 * **Ctrl** + **b**- or **b** - move cursor backwards by a word
 
-## Edit & Search/Replace
+## Edit, Search & Replace
 * **Ctrl** + **/** - undo
 * **Ctrl** + **r** - redo
 * **Ctrl** + **w** - delete word
