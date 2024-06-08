@@ -111,7 +111,7 @@
 
 ;; GUI settings
 (setq x-ctrl-keysym 'meta)
-(setq x-ctrl-keysym 'meta)
+(setq x-meta-keysym 'ctrl)
 (set-face-attribute 'default nil :height 150)
 
 ;; Projects
