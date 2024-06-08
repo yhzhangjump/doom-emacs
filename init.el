@@ -193,9 +193,3 @@
        :config
        ;;literate
        (default +bindings +smartparens))
-
-(setq x-ctrl-keysym 'meta)
-(setq x-meta-keysym 'ctrl)
-(setq doom-modeline-icon t)
-(add-hook 'rust-mode-hook 'lsp-deferred)
-(set-face-attribute 'default nil :height 160)

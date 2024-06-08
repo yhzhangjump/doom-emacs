@@ -75,6 +75,7 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; New key bindings
 (defun +private/treemacs-back-and-forth ()
   (interactive)
   (if (treemacs-is-treemacs-window-selected?)
@@ -99,15 +100,22 @@
 (map! :n "-" #'lsp-find-definition)
 (map! :n "M--" #'+private/treemacs-back-and-forth)
 
+;; New styles
 (require 'hl-line)
 (require 'highlight-indent-guides)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 (setq highlight-indent-guides-method 'character)
 (setq highlight-indent-guides-auto-enabled nil)
-
 (set-face-background 'hl-line "color-24")
 (set-face-foreground 'highlight-indent-guides-character-face "color-24")
 
+;; GUI settings
+(setq x-ctrl-keysym 'meta)
+(setq x-ctrl-keysym 'meta)
+(set-face-attribute 'default nil :height 150)
+
+;; Projects
+(add-hook 'rust-mode-hook 'lsp-deferred)
 (projectile-discover-projects-in-directory "~/repos/agave" 1)
 (projectile-discover-projects-in-directory "~/repos/firedancer" 1)
 
