@@ -90,6 +90,14 @@
   (interactive)
   (forward-line -5))
 
+(defun dark-theme ()
+  (interactive)
+  (load-theme 'doom-one t))
+
+(defun light-theme ()
+  (interactive)
+  (load-theme 'doom-feather-light t))
+
 (map! :n "C-f" #'forward-word)
 (map! :n "C-b" #'backward-word)
 (map! :n "C-n" #'jump-multiple-lines-forward)
