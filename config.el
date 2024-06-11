@@ -96,7 +96,7 @@
 
 (defun light-theme ()
   (interactive)
-  (load-theme 'doom-feather-light t))
+  (load-theme 'modus-operandi t))
 
 (map! :n "C-f" #'forward-word)
 (map! :n "C-b" #'backward-word)
