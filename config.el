@@ -110,12 +110,16 @@
 (map! :n "M--" #'+private/treemacs-back-and-forth)
 
 ;; New styles
+;; show current function in c-mode
+(add-hook 'c-mode-hook '(lambda () (which-function-mode t)))
+;; highlight current line
 (require 'hl-line)
-(require 'highlight-indent-guides)
-(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
-(setq highlight-indent-guides-method 'character)
-(setq highlight-indent-guides-auto-enabled nil)
 (set-face-background 'hl-line "color-24")
+;; show and color indent guides
+(require 'highlight-indent-guides)
+(setq highlight-indent-guides-auto-enabled nil)
+(setq highlight-indent-guides-method 'character)
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 (set-face-foreground 'highlight-indent-guides-character-face "color-24")
 
 ;; GUI settings
