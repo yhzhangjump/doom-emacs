@@ -33,6 +33,7 @@
 * **:number** got line **number**
 * **SPC t-l** show/hide line numbers
 * **SPC t-i** show/hide indent guides
+* **SPC t-f** enable/disable flycheck mode
 * **SPC o-p/P** open treemacs
 * **SPC Tab-]** switch workspace
 * **SPC q-q** quit emacs
