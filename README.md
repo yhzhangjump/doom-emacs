@@ -1,6 +1,6 @@
 ## Cursor Movement
 * **k/j/h/l** just like vim
-* **Ctrl** + **k/j/b/f/h/l** in insert mode
+* **Ctrl** + **p/n/b/f/a/e** in insert mode, just like emacs
 * **gj** - move cursor down (multi-line text)
 * **gk** - move cursor up (multi-line text)
 * **0** - jump to the start of the line
@@ -26,6 +26,7 @@
 * **:%s/old/new/gc** - replace all old with new throughout file with confirmation
 
 ## Navigation
+* **Ctrl**  + **y/e** - scroll up/down
 * **SPC b-k** kill the current buffer
 * **SPC ,** list and switch workspace buffer
 * **C-x h/l** switch prev/next workspace buffer
