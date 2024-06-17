@@ -109,12 +109,13 @@
 (map! :n "C-x h" #'previous-buffer)
 (map! :n "-" #'lsp-find-definition)
 (map! :n "C-x r" #'replace-rectangle)
+(map! :n "C-c C-u" #'uncomment-region)
 (map! :n "M--" #'+private/treemacs-back-and-forth)
 
 ;; Navigation in insert mode
 (evil-define-key 'insert global-map (kbd "C-n") 'evil-next-line)
 (evil-define-key 'insert global-map (kbd "C-p") 'evil-previous-line)
-
+(evil-define-key 'insert global-map (kbd "C-d") 'evil-delete-char)
 
 ;; New styles
 ;; show current function in c-mode

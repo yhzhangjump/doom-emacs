@@ -22,6 +22,7 @@
 * **SPC s-p** search string in project
 * **#** - search the token at cursor **up** in the buffer
 * <b>*</b> - search the token at cursor **down** in the buffer
+* **Ctrl** + **c** -**Ctrl** + **c/u**  comment / uncomment code
 * **:%s/old/new/g** - replace all old with new throughout file
 * **:%s/old/new/gc** - replace all old with new throughout file with confirmation
 
