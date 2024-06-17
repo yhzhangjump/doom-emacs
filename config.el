@@ -99,6 +99,7 @@
   ;;(load-theme 'modus-operandi t))
   (load-theme 'doom-feather-light t))
 
+;; Navigation
 (map! :n "C-f" #'forward-word)
 (map! :n "C-b" #'backward-word)
 (map! :n "C-n" #'jump-multiple-lines-forward)
@@ -109,6 +110,13 @@
 (map! :n "-" #'lsp-find-definition)
 (map! :n "C-x r" #'replace-rectangle)
 (map! :n "M--" #'+private/treemacs-back-and-forth)
+
+;; Navigation in insert mode
+(evil-define-key 'insert global-map (kbd "C-j") 'evil-next-line)
+(evil-define-key 'insert global-map (kbd "C-k") 'evil-previous-line)
+(evil-define-key 'insert global-map (kbd "C-h") 'evil-backward-char)
+(evil-define-key 'insert global-map (kbd "C-l") 'evil-forward-char)
+
 
 ;; New styles
 ;; show current function in c-mode

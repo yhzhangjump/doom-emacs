@@ -1,5 +1,6 @@
 ## Cursor Movement
 * **h/j/k/l** just like vim
+* **Ctrl** + **h/j/k/l** in insert mode
 * **gj** - move cursor down (multi-line text)
 * **gk** - move cursor up (multi-line text)
 * **0** - jump to the start of the line
