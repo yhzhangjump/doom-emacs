@@ -114,8 +114,8 @@
 ;; Navigation in insert mode
 (evil-define-key 'insert global-map (kbd "C-j") 'evil-next-line)
 (evil-define-key 'insert global-map (kbd "C-k") 'evil-previous-line)
-(evil-define-key 'insert global-map (kbd "C-h") 'evil-backward-char)
-(evil-define-key 'insert global-map (kbd "C-l") 'evil-forward-char)
+(evil-define-key 'insert global-map (kbd "C-h") 'evil-beginning-of-line)
+(evil-define-key 'insert global-map (kbd "C-l") 'evil-end-of-line)
 
 
 ;; New styles
