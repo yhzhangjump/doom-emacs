@@ -25,6 +25,7 @@
 * **Ctrl** + **c** -**Ctrl** + **c/u**  comment / uncomment code
 * **:%s/old/new/g** - replace all old with new throughout file
 * **:%s/old/new/gc** - replace all old with new throughout file with confirmation
+* **SPC g-r**  - revert modification at cursor using git
 
 ## Navigation
 * **Ctrl**  + **y/e** - scroll up/down
