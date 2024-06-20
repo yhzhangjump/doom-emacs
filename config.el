@@ -105,7 +105,8 @@
 
 (defun edit-state-exit-highlight()
   (interactive)
-  (set-face-background 'hl-line "color-24"))
+  (set-face-background 'hl-line "color-24")
+  (forward-char)) ;; Fixing a weird issue which backward-char when exiting the insert mode
 
 ;; Navigation
 (map! :n "C-f" #'forward-word)
@@ -124,8 +125,10 @@
 (map! :n "M--" #'+private/treemacs-back-and-forth)
 
 ;; Navigation in insert mode
-(evil-define-key 'insert global-map (kbd "C-f") 'forward-word)
-(evil-define-key 'insert global-map (kbd "C-b") 'backward-word)
+(evil-define-key 'insert global-map (kbd "C-f") 'forward-char)
+(evil-define-key 'insert global-map (kbd "C-b") 'backward-char)
+(evil-define-key 'insert global-map (kbd "C-l") 'forward-word)
+(evil-define-key 'insert global-map (kbd "C-h") 'backward-word)
 (evil-define-key 'insert global-map (kbd "C-n") 'evil-next-line)
 (evil-define-key 'insert global-map (kbd "C-p") 'evil-previous-line)
 (evil-define-key 'insert global-map (kbd "C-d") 'evil-delete-char)
