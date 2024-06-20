@@ -102,9 +102,12 @@
 ;; Navigation
 (map! :n "C-f" #'forward-word)
 (map! :n "C-b" #'backward-word)
+(map! :n "C-e" #'end-of-line)
+(map! :n "C-a" #'beginning-of-line)
+(map! :n "C-x j" #'scroll-down-line)
+(map! :n "C-x k" #'scroll-up-line)
 (map! :n "C-n" #'jump-multiple-lines-forward)
 (map! :n "C-p" #'jump-multiple-lines-backward)
-(map! :n "C-w" #'sp-delete-word)
 (map! :n "C-x l" #'next-buffer)
 (map! :n "C-x h" #'previous-buffer)
 (map! :n "-" #'lsp-find-definition)
@@ -113,6 +116,8 @@
 (map! :n "M--" #'+private/treemacs-back-and-forth)
 
 ;; Navigation in insert mode
+(evil-define-key 'insert global-map (kbd "C-f") 'forward-word)
+(evil-define-key 'insert global-map (kbd "C-b") 'backward-word)
 (evil-define-key 'insert global-map (kbd "C-n") 'evil-next-line)
 (evil-define-key 'insert global-map (kbd "C-p") 'evil-previous-line)
 (evil-define-key 'insert global-map (kbd "C-d") 'evil-delete-char)

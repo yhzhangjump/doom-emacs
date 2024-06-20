@@ -3,21 +3,21 @@
 * **Ctrl** + **p/n/b/f/a/e** in insert mode, just like emacs
 * **gj** - move cursor down (multi-line text)
 * **gk** - move cursor up (multi-line text)
-* **0** - jump to the start of the line
-* **$** - jump to the end of the line
+* **0** - jump to the start of the line (or **C-a**)
+* **$** - jump to the end of the line (or **C-e**)
 * **gg** - go to the first line of the document
 * **G** - go to the last line of the document
 * **Ctrl** + **d** - move cursor and screen **down** 1/2 page
 * **Ctrl** + **u** - move cursor and screen **up** 1/2 page
 * **Ctrl** + **n** - move cursor down 5 lines
 * **Ctrl** + **p** - move cursor up 5 lines
-* **Ctrl** + **f**- or **e** - move cursor forwards by a word
-* **Ctrl** + **b**- or **b** - move cursor backwards by a word
+* **Ctrl** + **f**- or **e** - move cursor forwards by a word (also in insert mode)
+* **Ctrl** + **b**- or **b** - move cursor backwards by a word (also in insert mode)
 
 ## Edit, Search & Replace
 * **Ctrl** + **/** - undo
 * **Ctrl** + **r** - redo
-* **Ctrl** + **w** - delete word
+* **Ctrl** + **w** - delete word in insert mode
 * **SPC s-s** search string in buffer
 * **SPC s-p** search string in project
 * **#** - search the token at cursor **up** in the buffer
@@ -28,7 +28,6 @@
 * **SPC g-r**  - revert modification at cursor using git
 
 ## Navigation
-* **Ctrl**  + **y/e** - scroll up/down
 * **SPC b-k** kill the current buffer
 * **SPC ,** list and switch workspace buffer
 * **C-x h/l** switch prev/next workspace buffer
