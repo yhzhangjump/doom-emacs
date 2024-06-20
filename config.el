@@ -96,8 +96,16 @@
 
 (defun light-theme ()
   (interactive)
-  ;;(load-theme 'modus-operandi t))
-  (load-theme 'doom-feather-light t))
+  (load-theme 'modus-operandi t))
+  ;;(load-theme 'doom-feather-light t))
+
+(defun edit-state-entry-highlight()
+  (interactive)
+  (set-face-background 'hl-line "color-131"))
+
+(defun edit-state-exit-highlight()
+  (interactive)
+  (set-face-background 'hl-line "color-24"))
 
 ;; Navigation
 (map! :n "C-f" #'forward-word)
@@ -128,12 +136,16 @@
 ;; highlight current line
 (require 'hl-line)
 (set-face-background 'hl-line "color-24")
+;; change highlight color in insert mode
+(add-hook 'evil-insert-state-entry-hook #'edit-state-entry-highlight)
+(add-hook 'evil-insert-state-exit-hook #'edit-state-exit-highlight)
 ;; show and color indent guides
 (require 'highlight-indent-guides)
 (setq highlight-indent-guides-auto-enabled nil)
 (setq highlight-indent-guides-method 'character)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 (set-face-foreground 'highlight-indent-guides-character-face "color-24")
+
 
 ;; GUI settings
 (setq x-ctrl-keysym 'meta)
