@@ -135,6 +135,7 @@
 (add-hook 'c-mode-hook '(lambda () (which-function-mode t)))
 ;; highlight current line
 (require 'hl-line)
+(setq hl-line-sticky-flag nil)
 (set-face-background 'hl-line "color-24")
 ;; change highlight color in insert mode
 (add-hook 'evil-insert-state-entry-hook #'edit-state-entry-highlight)

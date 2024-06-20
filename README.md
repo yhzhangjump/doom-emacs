@@ -1,12 +1,9 @@
 ## Cursor Movement
 * **k/j/h/l** just like vim
 * **Ctrl** + **p/n/b/f/a/e** in insert mode, just like emacs
-* **gj** - move cursor down (multi-line text)
-* **gk** - move cursor up (multi-line text)
-* **0** - jump to the start of the line (or **C-a**)
-* **$** - jump to the end of the line (or **C-e**)
-* **gg** - go to the first line of the document
-* **G** - go to the last line of the document
+* **0/$** - jump to the start/end of the line (or **C-a/C-e**)
+* **gg/G** - go to the first/last line of the document
+* **gj/gk** - move cursor down/up (multi-line text)
 * **Ctrl** + **d** - move cursor and screen **down** 1/2 page
 * **Ctrl** + **u** - move cursor and screen **up** 1/2 page
 * **Ctrl** + **n** - move cursor down 5 lines
@@ -20,12 +17,13 @@
 * **Ctrl** + **w** - delete word in insert mode
 * **SPC s-s** search string in buffer
 * **SPC s-p** search string in project
+* **SPC g-r**  - revert modification at cursor using git
 * **#** - search the token at cursor **up** in the buffer
 * <b>*</b> - search the token at cursor **down** in the buffer
+* **Ctrl** + **x** -**SPC/r**  select / replace a rectangle
 * **Ctrl** + **c** -**Ctrl** + **c/u**  comment / uncomment code
 * **:%s/old/new/g** - replace all old with new throughout file
 * **:%s/old/new/gc** - replace all old with new throughout file with confirmation
-* **SPC g-r**  - revert modification at cursor using git
 
 ## Navigation
 * **SPC b-k** kill the current buffer
