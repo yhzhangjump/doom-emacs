@@ -1,5 +1,6 @@
 ## Cursor Movement
-* **k/j/h/l** just like vim
+* **k/j/h/l** in normal mode, just like vim
+* **Ctrl** + **k/j/h/l** in insert mode, just like vim
 * **Ctrl** + **p/n/b/f/a/e/d** in insert mode, just like emacs
 * **0/$** - jump to the start/end of the line (or **C-a/C-e**)
 * **gg/G** - go to the first/last line of the document
