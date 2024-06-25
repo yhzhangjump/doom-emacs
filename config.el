@@ -120,6 +120,7 @@
 (map! :n "C-x l" #'next-buffer)
 (map! :n "C-x h" #'previous-buffer)
 (map! :n "-" #'lsp-find-definition)
+(map! :n "+" #'lsp-find-references)
 (map! :n "C-x r" #'replace-rectangle)
 (map! :n "C-c C-u" #'uncomment-region)
 (map! :n "M--" #'+private/treemacs-back-and-forth)
