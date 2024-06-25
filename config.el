@@ -126,12 +126,12 @@
 (map! :n "M--" #'+private/treemacs-back-and-forth)
 
 ;; Navigation in insert mode
-(evil-define-key 'insert global-map (kbd "C-f") 'forward-word)
-(evil-define-key 'insert global-map (kbd "C-b") 'backward-word)
-(evil-define-key 'insert global-map (kbd "C-h") 'backward-char)
+(evil-define-key 'insert global-map (kbd "C-f") 'forward-char)
+(evil-define-key 'insert global-map (kbd "C-b") 'backward-char)
+(evil-define-key 'insert global-map (kbd "C-l") 'forward-word)
+(evil-define-key 'insert global-map (kbd "C-h") 'backward-word)
 (evil-define-key 'insert global-map (kbd "C-j") 'evil-next-line)
 (evil-define-key 'insert global-map (kbd "C-k") 'evil-previous-line)
-(evil-define-key 'insert global-map (kbd "C-l") 'forward-char)
 (evil-define-key 'insert global-map (kbd "C-n") 'evil-next-line)
 (evil-define-key 'insert global-map (kbd "C-p") 'evil-previous-line)
 (evil-define-key 'insert global-map (kbd "C-d") 'evil-delete-char)
