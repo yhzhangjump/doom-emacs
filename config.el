@@ -101,7 +101,7 @@
 
 (defun edit-state-entry-highlight()
   (interactive)
-  (set-face-background 'hl-line "color-130"))
+  (set-face-background 'hl-line "color-95"))
 
 (defun edit-state-exit-highlight()
   (interactive)
