@@ -28,6 +28,8 @@
 * **:%s/old/new/gc** - replace all old with new throughout file with confirmation
 
 ## Navigation
+* **+** goto the usages of a function
+* **-** goto the definition of a function
 * **C-x h/l** switch prev/next workspace buffer
 * **SPC b-k** kill the current buffer
 * **SPC ,** list and switch workspace buffer
