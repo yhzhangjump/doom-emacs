@@ -105,7 +105,7 @@
 
 (defun edit-state-exit-highlight()
   (interactive)
-  (set-face-background 'hl-line "#008B8B")
+  (set-face-background 'hl-line "#008B45")
   (forward-char)) ;; Fixing a weird issue which backward-char when exiting the insert mode
 
 ;; Navigation
@@ -142,7 +142,11 @@
 ;; highlight current line
 (require 'hl-line)
 (setq hl-line-sticky-flag nil)
-(set-face-background 'hl-line "#008B8B")
+;; DarkCyan       #008B8B
+;; DarkOliveGreen #6E8B3D
+;; ForestGreen    #228B22
+;; SpringGreen    #008B45
+(set-face-background 'hl-line "#008B45")
 ;; change highlight color in insert mode
 (add-hook 'evil-insert-state-entry-hook #'edit-state-entry-highlight)
 (add-hook 'evil-insert-state-exit-hook #'edit-state-exit-highlight)
