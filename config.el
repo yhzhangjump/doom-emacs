@@ -101,11 +101,11 @@
 
 (defun edit-state-entry-highlight()
   (interactive)
-  (set-face-background 'hl-line "#8B795E"))
+  (set-face-background 'hl-line "#008B45"))
 
 (defun edit-state-exit-highlight()
   (interactive)
-  (set-face-background 'hl-line "#008B45")
+  (set-face-background 'hl-line "#0048BA")
   (forward-char)) ;; Fixing a weird issue which backward-char when exiting the insert mode
 
 ;; Navigation
@@ -146,7 +146,8 @@
 ;; DarkOliveGreen #6E8B3D
 ;; ForestGreen    #228B22
 ;; SpringGreen    #008B45
-(set-face-background 'hl-line "#008B45")
+;; Absolute Zero  #0048BA
+(set-face-background 'hl-line "#0048BA")
 ;; change highlight color in insert mode
 (add-hook 'evil-insert-state-entry-hook #'edit-state-entry-highlight)
 (add-hook 'evil-insert-state-exit-hook #'edit-state-exit-highlight)
@@ -155,7 +156,7 @@
 (setq highlight-indent-guides-auto-enabled nil)
 (setq highlight-indent-guides-method 'character)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
-(set-face-foreground 'highlight-indent-guides-character-face "#008B8B")
+(set-face-foreground 'highlight-indent-guides-character-face "#0048BA")
 
 
 ;; GUI settings
