@@ -142,6 +142,7 @@
 ;; highlight current line
 (require 'hl-line)
 (setq hl-line-sticky-flag nil)
+;; See https://www.color-hex.com/color-names.html
 ;; DarkCyan       #008B8B
 ;; DarkOliveGreen #6E8B3D
 ;; ForestGreen    #228B22
