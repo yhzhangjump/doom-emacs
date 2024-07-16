@@ -99,13 +99,22 @@
   (load-theme 'modus-operandi t))
   ;;(load-theme 'doom-feather-light t))
 
+;; See https://www.color-hex.com/color-names.html
+(setq DarkCyan        "#008B8B")
+(setq DarkOliveGreen  "#6E8B3D")
+(setq ForestGreen     "#228B22")
+(setq SpringGreen     "#008B45")
+(setq AbsoluteZero    "#0048BA")
+(setq InsertModeColor SpringGreen)
+(setq NormalModeColor AbsoluteZero)
+
 (defun edit-state-entry-highlight()
   (interactive)
-  (set-face-background 'hl-line "#008B45"))
+  (set-face-background 'hl-line InsertModeColor))
 
 (defun edit-state-exit-highlight()
   (interactive)
-  (set-face-background 'hl-line "#0048BA")
+  (set-face-background 'hl-line NormalModeColor)
   (forward-char)) ;; Fixing a weird issue which backward-char when exiting the insert mode
 
 (defun escape-after-switching-window()
@@ -114,7 +123,7 @@
 
 (defun no-highlight-after-switching-window()
   (interactive)
-  (set-face-background 'hl-line "#0048BA"))
+  (set-face-background 'hl-line NormalModeColor))
 
 ;; Navigation
 (map! :n "C-f" #'forward-word)
@@ -150,13 +159,7 @@
 ;; highlight current line
 (require 'hl-line)
 (setq hl-line-sticky-flag nil)
-;; See https://www.color-hex.com/color-names.html
-;; DarkCyan       #008B8B
-;; DarkOliveGreen #6E8B3D
-;; ForestGreen    #228B22
-;; SpringGreen    #008B45
-;; Absolute Zero  #0048BA
-(set-face-background 'hl-line "#0048BA")
+(set-face-background 'hl-line NormalModeColor)
 ;; change highlight color in insert mode
 (add-hook 'evil-insert-state-entry-hook #'edit-state-entry-highlight)
 (add-hook 'evil-insert-state-exit-hook #'edit-state-exit-highlight)
@@ -167,7 +170,7 @@
 (setq highlight-indent-guides-auto-enabled nil)
 (setq highlight-indent-guides-method 'character)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
-(set-face-foreground 'highlight-indent-guides-character-face "#0048BA")
+(set-face-foreground 'highlight-indent-guides-character-face NormalModeColor)
 
 
 ;; GUI settings
