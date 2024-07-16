@@ -108,6 +108,14 @@
   (set-face-background 'hl-line "#0048BA")
   (forward-char)) ;; Fixing a weird issue which backward-char when exiting the insert mode
 
+(defun escape-after-switching-window()
+  (interactive)
+  (evil-escape))
+
+(defun no-highlight-after-switching-window()
+  (interactive)
+  (set-face-background 'hl-line "#0048BA"))
+
 ;; Navigation
 (map! :n "C-f" #'forward-word)
 (map! :n "C-b" #'backward-word)
@@ -152,6 +160,8 @@
 ;; change highlight color in insert mode
 (add-hook 'evil-insert-state-entry-hook #'edit-state-entry-highlight)
 (add-hook 'evil-insert-state-exit-hook #'edit-state-exit-highlight)
+(add-hook 'doom-switch-window-hook #'escape-after-switching-window)
+(add-hook 'doom-switch-window-hook #'no-highlight-after-switching-window)
 ;; show and color indent guides
 (require 'highlight-indent-guides)
 (setq highlight-indent-guides-auto-enabled nil)
