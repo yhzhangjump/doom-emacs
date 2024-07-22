@@ -113,7 +113,7 @@
 (setq Bittersweet     "#BF4F51")
 (setq Cerise          "#DE3163")
 
-(setq InsertModeColor SpringGreen)
+(setq InsertModeColor Bittersweet)
 (setq NormalModeColor AbsoluteZero)
 
 (defun edit-state-entry-highlight()
