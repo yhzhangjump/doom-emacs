@@ -100,11 +100,19 @@
   ;;(load-theme 'doom-feather-light t))
 
 ;; See https://www.color-hex.com/color-names.html
-(setq DarkCyan        "#008B8B")
+;; Green-ish
 (setq DarkOliveGreen  "#6E8B3D")
 (setq ForestGreen     "#228B22")
 (setq SpringGreen     "#008B45")
+;; Blue-ish
 (setq AbsoluteZero    "#0048BA")
+(setq CadetBlue4      "#53868B")
+(setq DarkCyan        "#008B8B")
+;; Red-ish
+(setq Amaranth        "#E52B50")
+(setq Bittersweet     "#BF4F51")
+(setq Cerise          "#DE3163")
+
 (setq InsertModeColor SpringGreen)
 (setq NormalModeColor AbsoluteZero)
 
