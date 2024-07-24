@@ -30,6 +30,7 @@
 ## Navigation
 * **+** goto the usages of a function
 * **-** goto the definition of a function
+* **C-o** goto the older position in jump list
 * **C-x h/l** switch prev/next workspace buffer
 * **SPC b-k** kill the current buffer
 * **SPC ,** list and switch workspace buffer
