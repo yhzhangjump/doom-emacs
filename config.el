@@ -173,13 +173,6 @@
 (add-hook 'evil-insert-state-exit-hook #'edit-state-exit-highlight)
 (add-hook 'doom-switch-window-hook #'escape-after-switching-window)
 (add-hook 'doom-switch-window-hook #'no-highlight-after-switching-window)
-;; show and color indent guides
-(require 'highlight-indent-guides)
-(setq highlight-indent-guides-auto-enabled nil)
-(setq highlight-indent-guides-method 'character)
-(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
-(set-face-foreground 'highlight-indent-guides-character-face NormalModeColor)
-
 
 ;; GUI settings
 (setq x-ctrl-keysym 'meta)
