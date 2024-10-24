@@ -181,6 +181,7 @@
 
 ;; Projects
 (add-hook 'rust-mode-hook 'lsp-deferred)
+(add-hook 'markdown-mode-hook 'hl-todo-mode)
 (projectile-discover-projects-in-directory "~/repos/agave" 1)
 (projectile-discover-projects-in-directory "~/repos/firedancer" 1)
 
