@@ -96,7 +96,7 @@
 
 (defun light-theme ()
   (interactive)
-  (load-theme 'modus-operandi t))
+  (load-theme 'whiteboard t))
   ;;(load-theme 'doom-feather-light t))
 
 ;; See https://www.color-hex.com/color-names.html
