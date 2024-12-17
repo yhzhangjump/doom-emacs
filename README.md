@@ -44,5 +44,9 @@
 * **SPC Tab-]** switch workspace
 * **SPC x** open scratch buffer
 * **SPC q-s/l** save and restore session
+
+## Resize
+* **z a** fold/unfold a block (e.g., an if/else block)
+* **z r** unfold all folded blocks
 * **SPC w--/+** decrease/increase window height
 * **SPC w-</=/>** decrease/balance/increase window width
