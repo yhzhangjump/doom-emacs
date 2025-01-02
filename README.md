@@ -22,7 +22,6 @@
 * **SPC g-r**  - revert modification at cursor using git
 * **#** - search the token at cursor **up** in the buffer
 * <b>*</b> - search the token at cursor **down** in the buffer
-* **Ctrl** + **c** -**Ctrl** + **c/u**  comment / uncomment code
 * **Ctrl** + **x** -**SPC/r**  select / replace a rectangle
 * **:%s/old/new/g** - replace all old with new throughout file
 * **:%s/old/new/gc** - replace all old with new throughout file with confirmation
@@ -32,21 +31,23 @@
 * **-** goto the definition of a function
 * **C-o** goto the older position in jump list
 * **C-x h/l** switch prev/next workspace buffer
-* **SPC b-k** kill the current buffer
 * **SPC ,** list and switch workspace buffer
 * **SPC .** find a file in the current **directory**
 * **SPC SPC** find a file in the current **project**
 * **:number** got line **number**
-* **SPC t-l** show/hide line numbers
-* **SPC t-i** show/hide indent guides
-* **SPC t-f** enable/disable flycheck mode
-* **SPC o-p/P** open treemacs
 * **SPC Tab-]** switch workspace
+* **SPC o-p/P** open treemacs
 * **SPC x** open scratch buffer
-* **SPC q-s/l** save and restore session
 
-## Resize
+## Other
+* **Ctrl** + **c** -**Ctrl** + **c/u**  comment / uncomment code
 * **z a** fold/unfold a block (e.g., an if/else block)
 * **z r** unfold all folded blocks
-* **SPC w--/+** decrease/increase window height
-* **SPC w-</=/>** decrease/balance/increase window width
+* **SPC t-l** show/hide line numbers
+* **SPC t-i** show/hide indent guides
+* **SPC b-k** kill the current buffer
+* **SPC q-s/l** save and restore session
+* **SPC t-f** enable/disable flycheck mode
+* **SPC w--/+** decrease/increase the buffer height
+* **SPC w-</=/>** decrease/balance/increase the buffer width
+* **SPC p i** invalidate projectile cache (e.g., after removing a file)
