@@ -92,11 +92,13 @@
 
 (defun dark-theme ()
   (interactive)
-  (load-theme 'doom-one t))
+  (load-theme 'doom-one t)
+  (disable-theme 'whiteboard))
 
 (defun light-theme ()
   (interactive)
-  (load-theme 'whiteboard t))
+  (load-theme 'whiteboard t)
+  (disable-theme 'doom-one))
   ;;(load-theme 'doom-feather-light t))
 
 ;; See https://www.color-hex.com/color-names.html
