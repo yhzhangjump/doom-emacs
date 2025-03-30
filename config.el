@@ -177,6 +177,9 @@
 (add-hook 'doom-switch-window-hook #'no-highlight-after-switching-window)
 
 ;; GUI settings
+;; keysym works with emacs-gtk but not emacs-wayland,
+;; so you need to do `EMACS_TOOLKIT=gtk emacs` when
+;; running the pre-compiled emacs from snap store
 (setq x-ctrl-keysym 'meta)
 (setq x-meta-keysym 'ctrl)
 (set-face-attribute 'default nil :height 150)
