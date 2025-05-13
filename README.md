@@ -51,3 +51,4 @@
 * **SPC w--/+** decrease/increase the buffer height
 * **SPC w-</=/>** decrease/balance/increase the buffer width
 * **SPC p i** invalidate projectile cache (e.g., after removing a file)
+* **SPC m t t** run the current rust unit test
